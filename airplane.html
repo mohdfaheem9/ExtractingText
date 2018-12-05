@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>lab prog3</title>
+   <style>
+      body{
+           scroll-snap-type: y mandatory;
+           overflow: scroll;
+       }
+       .one{
+           background-color: #E84342;
+           color: white;
+           font-family:monospace;
+           text-align: center;
+           height: 100vh;
+           scroll-snap-allign:start;
+        
+       }
+       .two{
+           background-color: #0A79Df;
+            color: white;
+           font-family:monospace;
+           text-align: center;
+           height: 100vh;
+           scroll-snap-allign:start;
+           
+       }
+       .three{
+           background-color: #B83227;
+            color: white;
+           font-family:monospace;
+           text-align: center;
+           height: 100vh;
+           scroll-snap-allign:start;
+       }
+    </style>
+    <script language="javascript">
+    function welcome()
+        {
+            alert("welcome to the international airport");
+        }
+        function kinfisher()
+        {
+            alert("welcome to kingfisher");
+        }
+        function indianairlines()
+        {
+            alert("welcome to indian airlines");
+        }
+        function jetairways()
+        {
+            alert("welcome to jetairways");
+        }
+        
+    </script>
+    
+</head>
+<body bgcolor="pink"
+   onload="return welcome()";>
+   <center><h1>WELCOME TO INTERNATIONAL AIRPORT</h1></center>
+   <div class="wrapper">
+        <h2>Login to book a ticket</h2>
+        <p>Please fill in your credentials to login.</p>
+        <form action="<" ">
+            <div class="form-group <">
+                <label>Username</label>
+                <input type="text" name="username" class="form-control" value="">
+                <span class="help-block"><?php echo $username_err; ?></span>
+            </div>    
+            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control">
+                <span class="help-block"><?php echo $password_err; ?></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Login">
+            </div>
+    
+            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+        </form>
+    </div>
+    <div class="one">
+       <h3>
+        <input type="radio" value= b1 value="click here"
+        onclick="return kingfisher();">
+           <a href="https://www.goibibo.com/airlines/kingfisher-airlines/"> Visit kingfishers airlines!</a>
+        KINGFISHER
+    </h3>
+    <img src="C:\Users\user\Desktop\JS\k1.jpg" width="1200" height="550">>
+    
+    </div>
+    <br>
+    <div class="two">
+    <h3>
+        <input type="radio" value= b1 value="click here"
+        onclick="return indianairlines();">
+        INDIAN AIRLINES
+    </h3>
+    <img src="C:\Users\user\Desktop\JS\indian.jpg" width="1200" height="550">
+    </div>
+    <br>
+    <div class="three">
+    <h3>
+        <input type="radio" value= b1 value="click here"
+        onclick="return jetairways();">
+        JETAIRWAYS
+    </h3>
+    <img src="C:\Users\user\Desktop\JS\jet.jpg" width="1200" height="550">
+    </div>
+    </body>
+</html>
